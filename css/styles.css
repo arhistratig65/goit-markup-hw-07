@@ -258,7 +258,7 @@ Font Roboto Weight 400
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url('../images/people-office.jpg');
+        url("../images/bgp.jpg");
     }
     .hero-header {
       display: block;
@@ -451,7 +451,7 @@ Font Roboto Weight 400
         border var(--transition-duradion-and-funk), background-image var(--transition-duradion-and-funk);
     }
     .send-form-check:checked + .send-form-policy::before {
-      background-image: url(../images/check_mark.svg);
+      background-image: url(../images/check.svg);
       background-repeat: no-repeat;
       background-position: center;
       background-color: var(--ocean-color);
