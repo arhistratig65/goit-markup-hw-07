@@ -48,9 +48,6 @@ Font Roboto Weight 400
       --green-color: #31d0aa;
       --primary-font: "Roboto", sans-serif;
       --secondary-font: "Raleway", sans-serif;
-      --card-set-gap: 24px;
-      --card-set-fotter-gap: 16px;
-      /*margin between elements from the side*/
       --transition-duradion-and-funk: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     
@@ -107,6 +104,7 @@ Font Roboto Weight 400
         margin-left: auto;
         margin-right: auto;
       }
+      
     /* ----header----- */
 
     .page-header {
@@ -354,6 +352,8 @@ Font Roboto Weight 400
       box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     }
+
+    /* ---modal form--- */
     .send-form-text {
       margin-bottom: 14px;
       text-align: center;
@@ -493,9 +493,8 @@ Font Roboto Weight 400
     .send-form-btn:focus {
       background-color: var(--ocean-color);
     }
-    .strategy-item-link {
-      display: none;
-    }
+    
+        /* < !-- список 4 блока --> */
     .strategy {
       padding-top: 96px;
       padding-bottom: 96px;
@@ -508,10 +507,14 @@ Font Roboto Weight 400
       color: var(--primary-text-color-theme-light);
       margin-bottom: 8px;
     }
+    .strategy-item-link {
+      display: none;
+      }
     .strategy-text {
       line-height: 1.5;
       letter-spacing: 0.02em;
     }
+        /* < !-- команда --> */
     .team-list-item-text {
       line-height: 1.5;
       letter-spacing: 0.02em;
@@ -586,6 +589,7 @@ Font Roboto Weight 400
       text-align: center;
       text-transform: capitalize;
     }
+        /* < !-- Customers --> */
     .customer {
       padding-top: 96px;
       padding-bottom: 96px;
@@ -631,6 +635,9 @@ Font Roboto Weight 400
       fill: var(--ocean-color);
       color: var(--ocean-color);
     }
+
+        /* < !-- футер --> */
+
     .page-footer {
       padding-top: 96px;
       padding-bottom: 96px;
@@ -736,6 +743,9 @@ Font Roboto Weight 400
       color: var(--white-color);
       font-size: 16px;
     }
+
+        /* < !-- портфолио --> */
+
     .portfolio-overlay-card {
       position: absolute;
       left: 0;
@@ -835,19 +845,32 @@ Font Roboto Weight 400
       line-height: 1.5;
       letter-spacing: 0.02em;
     }
-    /* -----------mobile */
-    @media screen and (max-width: 385px) {
-      .mobile-menu-contact-phone-link {
-        font-size: 22px;
-        font-weight: 700;
-      }
-    
-      .mobile-menu-social {
-        column-gap: 8%;
-      }
+
+
+    .portfolio-section {
+      padding-top: 96px;
     }
     
+    .portfolio-card-item {
+      display: flex;
+        flex-basis: calc((100% - (2 * 24px)) / 3);
+    }
+    
+    .portfolio-menu {
+      margin-bottom: 72px;
+    }
+    
+    .portfolio-work {
+      row-gap: 48px;
+      column-gap: 24px;
+      justify-content: center;
+    }
+
+
+    /* ---мобильая до 767--- */
     @media screen and (max-width: 767px) {
+
+      /* хедер */
       .page-nav {
         display: none;
       }
@@ -884,6 +907,8 @@ Font Roboto Weight 400
         line-height: 0;
       }
     
+      /* герой */
+
       .overlay {
         padding: 112px 0px;
       }
@@ -894,6 +919,8 @@ Font Roboto Weight 400
         max-width: 318px;
       }
     
+/* < !-- modal --> */
+
       .modal {
         max-width: 392px;
       }
@@ -902,6 +929,9 @@ Font Roboto Weight 400
         max-width: 428px;
       }
     
+
+       /* < !-- список 4 блока --> */
+
       .strategy-list {
         display: flex;
         flex-direction: column;
@@ -918,6 +948,8 @@ Font Roboto Weight 400
         max-width: 396px;
       }
     
+      /* < !-- команда --> */
+
       .team-list {
         flex-wrap: nowrap;
       }
@@ -931,12 +963,16 @@ Font Roboto Weight 400
         row-gap: 72px;
       }
     
+            /* < !-- Customers --> */
+
       .customer-menu-item {
         height: 88px;
         width: 190px;
         flex-basis: calc((100% - 16px) / 2);
       }
     
+            /* < !-- футер --> */
+
       .footer-logo {
         text-align: center;
       }
@@ -972,22 +1008,9 @@ Font Roboto Weight 400
       .footer-subscribe-btn {
         margin-top: 16px;
       }
-    
-      .portfolio-section {
-        padding-top: 48px;
-      }
-    
-      .portfolio-menu {
-        align-items: center;
-        justify-content: start;
-        max-width: 80%;
-        flex-wrap: wrap;
-        column-gap: 24px;
-        row-gap: 16px;
-      }
     }
-    /* -------------mobile */
-    /* --------------tablet */
+        /* ---мобильая до 767--- */
+    /* ---планшет до 1190--- */
     @media screen and (max-width: 1199px) {
       .menu-link.link-item-block {
         display: block;
@@ -1179,30 +1202,9 @@ Font Roboto Weight 400
         justify-content: center;
         align-items: baseline;
       }
-    
-      .portfolio-menu {
-        flex-wrap: nowrap;
-        column-gap: 24px;
-        margin-bottom: 64px;
-      }
-    
-      .portfolio-section {
-        padding-top: 64px;
-        padding-bottom: 96px;
-      }
-    
-      .portfolio-work {
-        row-gap: 72px;
-        column-gap: 24px;
-        justify-content: flex-start;
-      }
-    
-      .portfolio-card-item {
-        flex-basis: calc((100% - 24px) / 2);
-      }
     }
-    /* ----------------tablet */
-    /* -----------------desktop */
+    /* ---планшет до 1190--- */
+    /* ----большой экран от 1200----- */
     @media screen and (min-width: 1200px) {
       .container {
         max-width: 1158px;
@@ -1359,7 +1361,7 @@ Font Roboto Weight 400
         margin-bottom: 0;
       }
     
-      .portfolio-section {
+      /* .portfolio-section {
         padding-top: 96px;
       }
     
@@ -1376,7 +1378,7 @@ Font Roboto Weight 400
         row-gap: 48px;
         column-gap: 24px;
         justify-content: center;
-      }
+      } */
     }
     
     @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
