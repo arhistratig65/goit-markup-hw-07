@@ -282,7 +282,7 @@
         </section>
         <!-- команда -->
         <section class="team section">
-            <div class="conteiner">
+            <div class="container">
             <h2 class="team-header">Our Team</h2>
             <ul class="team-list">
                 <li class="team-item">
@@ -369,13 +369,11 @@
                     </ul>
                   </div>
                 </li>
-                
                 <li class="team-item">
-                    <picture>
-                      <source srcset="./images/camila_garcia.webp  1x, ./images/camila_garcia@2x.webp 2x" type="image/webp" />
-                      <source srcset="./images/camila_garcia 1x, ./images/camila_garcia@2x.jpg 2x" />
-                      <img src="./images/camila_garcia.jpg" alt="Daniel Wilson. UI Designer" width="264" />
-                    </picture>
+                  <img
+                    src="./images/camila_garcia.jpg"
+                    alt="Camila Garcia. Marketing"
+                    width="264" />
                   <div class="team-img-descr">
                     <h3 class="team-header-item">Camila Garcia</h3>
                     <p class="team-list-item-text">Marketing</p>
@@ -399,7 +397,6 @@
                     </ul>
                   </div>
                 </li>
-
                 <li class="team-item">
                   <picture>
                     <source
@@ -409,6 +406,7 @@
                     <img src="./images/daniel_wilson.jpg"
                       alt="Daniel Wilson. UI Designer"
                       width="264"/></picture>
+    
                   <div class="team-img-descr">
                     <h3 class="team-header-item">Daniel Wilson</h3>
                     <p class="team-list-item-text">UI Designer</p>
@@ -540,18 +538,24 @@
                     </li>
                 </ul>
             </div>
-<div class="footer-subscribe">
-  <p class="footer-text">Subscribe</p>
-  <form class="footer-form-subscribe">
-    <input type="email" name="subscribe_email" minlength="3" placeholder="E-mail" class="footer-subscribe-input" />
-    <button type="submit" class="footer-subscribe-btn">
-      <span class="footer-subscribe-btn-text">Subscribe</span>
-      <svg class="footer-subscribe-img">
-        <use href="./images/icons.svg#icon-icon-send"></use>
-      </svg>
-    </button>
-  </form>
-</div>
+
+            <div class="footer-subscribe">
+                <p class="footer-text">Subscribe</p>
+                <form class="footer-form-subscribe">
+                  <input
+                    type="email"
+                    name="subscribe_email"
+                    minlength="3"
+                    placeholder="E-mail"
+                    class="footer-subscribe-input" />
+                  <button type="submit" class="footer-subscribe-btn">
+                    <span class="footer-subscribe-btn-text">Subscribe</span>
+                    <svg class="footer-subscribe-img">
+                      <use href="./images/icons.svg#icon-icon-send"></use>
+                    </svg>
+                  </button>
+                </form>
+              </div>
 
         </div>
     </footer>
