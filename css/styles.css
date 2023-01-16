@@ -1361,24 +1361,6 @@ Font Roboto Weight 400
         margin-bottom: 0;
       }
     
-      /* .portfolio-section {
-        padding-top: 96px;
-      }
-    
-      .portfolio-card-item {
-        display: flex;
-        flex-basis: calc((100% - (2 * 24px)) / 3);
-      }
-    
-      .portfolio-menu {
-        margin-bottom: 72px;
-      }
-    
-      .portfolio-work {
-        row-gap: 48px;
-        column-gap: 24px;
-        justify-content: center;
-      } */
     }
     
     @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
