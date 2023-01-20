@@ -812,79 +812,66 @@ Font Roboto Weight 400
       box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
     }
-    .portfolio-menu {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-      column-gap: 24px;
-      margin-bottom: 48px;
-    }
-    .portfolio-work {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      row-gap: 48px;
-    }
-    .portfolio-card-link:hover .portfolio-overlay-card,
-    .portfolio-card-link:focus .portfolio-overlay-card {
-      transform: translate(0, 0);
-    }
-    .portfolio-card-link {
-      border: 0.5px solid var(--secondary-color-fourth);
-      box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-      transition: box-shadow var(--transition-duradion-and-funk);
-    }
-    .portfolio-card-link:hover,
-    .portfolio-card-link:focus {
-      box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    }
-    .portfolio-description {
-      padding-top: 32px;
-      padding-bottom: 32px;
-      padding-left: 16px;
-      border: 0.5px solid;
-      border-color: var(--secondary-color-third);
-      border-top: none;
-    }
-    .portfolio-header {
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 1.2;
-      letter-spacing: 0.02em;
-      text-transform: capitalize;
-      color: var(--primary-text-color-theme-light);
-      margin-bottom: 8px;
-    }
-    .portfolio-text {
-      line-height: 1.5;
-      color: var(--secondary-text-color-theme-light);
-      font-size: 16px;
-      line-height: 1.5;
-      letter-spacing: 0.02em;
-    }
-
-
-    .portfolio-section {
-      padding-top: 96px;
-    }
+        .portfolio-menu {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          column-gap: 24px;
+          margin-bottom: 48px;
+        }
     
-    .portfolio-card-item {
-      display: flex;
-        flex-basis: calc((100% - (2 * 24px)) / 3);
-    }
+        .portfolio-work {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+          row-gap: 48px;
+        }
     
-    .portfolio-menu {
-      margin-bottom: 72px;
-    }
+        .portfolio-card-link:hover .portfolio-overlay-card,
+        .portfolio-card-link:focus .portfolio-overlay-card {
+          transform: translate(0, 0);
+        }
     
-    .portfolio-work {
-      row-gap: 48px;
-      column-gap: 24px;
-      justify-content: center;
-    }
+        .portfolio-card-link {
+          border: 0.5px solid var(--secondary-color-fourth);
+          box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+          transition: box-shadow var(--transition-duradion-and-funk);
+        }
+    
+        .portfolio-card-link:hover,
+        .portfolio-card-link:focus {
+          box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        }
+    
+        .portfolio-description {
+          padding-top: 32px;
+          padding-bottom: 32px;
+          padding-left: 16px;
+          border: 0.5px solid;
+          border-color: var(--secondary-color-third);
+          border-top: none;
+        }
+    
+        .portfolio-header {
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 1.2;
+          letter-spacing: 0.02em;
+          text-transform: capitalize;
+          color: var(--primary-text-color-theme-light);
+          margin-bottom: 8px;
+        }
+    
+        .portfolio-text {
+          line-height: 1.5;
+          color: var(--secondary-text-color-theme-light);
+          font-size: 16px;
+          line-height: 1.5;
+          letter-spacing: 0.02em;
+        }
 
 
     /* ---мобильая до 767--- */
@@ -1028,6 +1015,28 @@ Font Roboto Weight 400
       .footer-subscribe-btn {
         margin-top: 16px;
       }
+            .footer-logo p {
+              margin-left: auto;
+              margin-right: auto;
+              text-align: start;
+            }
+      
+            .footer-subscribe-btn {
+              margin-top: 16px;
+            }
+      
+            .portfolio-section {
+              padding-top: 48px;
+            }
+      
+            .portfolio-menu {
+              align-items: center;
+              justify-content: start;
+              max-width: 80%;
+              flex-wrap: wrap;
+              column-gap: 24px;
+              row-gap: 16px;
+            }
     }
         /* ---мобильая до 767--- */
     /* ---планшет до 1190--- */
@@ -1222,6 +1231,26 @@ Font Roboto Weight 400
         justify-content: center;
         align-items: baseline;
       }
+            .portfolio-menu {
+              flex-wrap: nowrap;
+              column-gap: 24px;
+              margin-bottom: 64px;
+            }
+      
+            .portfolio-section {
+              padding-top: 64px;
+              padding-bottom: 96px;
+            }
+      
+            .portfolio-work {
+              row-gap: 72px;
+              column-gap: 24px;
+              justify-content: flex-start;
+            }
+      
+            .portfolio-card-item {
+              flex-basis: calc((100% - 24px) / 2);
+            }
     }
     /* ---планшет до 1190--- */
     /* ----большой экран от 1200----- */
@@ -1380,6 +1409,25 @@ Font Roboto Weight 400
         margin-right: 120px;
         margin-bottom: 0;
       }
+
+             .portfolio-section {
+               padding-top: 96px;
+             }
+      
+             .portfolio-card-item {
+               display: flex;
+               flex-basis: calc((100% - (2 * 24px)) / 3);
+             }
+      
+             .portfolio-menu {
+               margin-bottom: 72px;
+             }
+      
+             .portfolio-work {
+               row-gap: 48px;
+               column-gap: 24px;
+               justify-content: center;
+             }
     
     }
     
